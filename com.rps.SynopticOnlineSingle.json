@@ -33,24 +33,24 @@
             "description": "Flow4_BATTERY"
         },
         {
-            "endpoint": "/sols/fl5abi",
+            "endpoint": "/sols/fl5ai",
             "type": "string",
             "description": "Flow5a_IN_BYPASS_FULL"
         },
         {
-            "endpoint": "/sols/fl5abo",
+            "endpoint": "/sols/fl5ao",
             "type": "string",
             "description": "Flow5a_OUT_BYPASS_FULL"
         },
         {
             "endpoint": "/sols/fl5bi",
             "type": "string",
-            "description": "Flow5a_IN_BYPASS_EMPTY"
+            "description": "Flow5b_IN_BYPASS_EMPTY"
         },
         {
             "endpoint": "/sols/fl5bo",
             "type": "string",
-            "description": "Flow5a_OUT_BYPASS_EMPTY"
+            "description": "Flow5b_OUT_BYPASS_EMPTY"
         },
         {
             "endpoint": "/sols/ico1",
