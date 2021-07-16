@@ -1,0 +1,102 @@
+{
+    "interface_name": "com.rps.RealtimeMM",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "datastream",
+    "ownership": "device",
+    "aggregation": "object",
+    "description": "Valori da storicizzare\n",
+    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\nI dati devono essere archiviati per 24 ore",
+    "mappings": [
+        {
+            "endpoint": "/mm/by1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Bypass voltage (Ph-N) V1"
+        },
+        {
+            "endpoint": "/mm/byf",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Hz/10",
+            "doc": "Bypass frequency"
+        },
+        {
+            "endpoint": "/mm/fri",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Hz/10",
+            "doc": "Input frequency"
+        },
+        {
+            "endpoint": "/mm/fro",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Hz/10",
+            "doc": "Output frequency"
+        },
+        {
+            "endpoint": "/mm/ld1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "Load phase L1"
+        },
+        {
+            "endpoint": "/mm/vbn",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "V/10",
+            "doc": "Battery voltage of negative bench"
+        },
+        {
+            "endpoint": "/mm/vbp",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "V/10",
+            "doc": "Battery voltage of positive bench"
+        },
+        {
+            "endpoint": "/mm/vi1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V1"
+        },
+        {
+            "endpoint": "/mm/vo1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Output voltage (Ph-N) V1"
+        },
+        {
+            "endpoint": "/mm/wo1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "kW/10",
+            "doc": "Output active power phase L1"
+        }
+    ]
+}
