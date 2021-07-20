@@ -1,0 +1,66 @@
+{
+    "interface_name": "com.rps.DatalogExternalSensors",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "datastream",
+    "ownership": "device",
+    "aggregation": "object",
+    "description": "Valori da storicizzare dei sensori ambientali",
+    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 60 minuti. I dati devono essere archiviati per 1/5 anni",
+    "mappings": [
+        {
+            "endpoint": "/dataloges/t1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Sensor 1 temperature"
+        },
+        {
+            "endpoint": "/dataloges/t2",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Sensor 2 temperature"
+        },
+        {
+            "endpoint": "/dataloges/t3",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Sensor 3 temperature"
+        },
+        {
+            "endpoint": "/dataloges/h1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Sensor 1 humidity"
+        },
+        {
+            "endpoint": "/dataloges/h2",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Sensor 2 humidity"
+        },
+        {
+            "endpoint": "/dataloges/h3",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Sensor 3 humidity"
+        }
+    ]
+}
