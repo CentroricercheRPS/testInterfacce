@@ -1,0 +1,126 @@
+{
+    "interface_name": "com.rps.SynopticOnline",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "properties",
+    "ownership": "device",
+    "description": "Sinottico per Online",
+    "doc": "Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tCyan\n3\tBlue\n4\tOrange\n5\tRed",
+    "mappings": [
+        {
+            "endpoint": "/sol/aut",
+            "type": "string",
+            "description": "Autonomy time"
+        },
+        {
+            "endpoint": "/sol/bat",
+            "type": "string",
+            "description": "Battery charge"
+        },
+        {
+            "endpoint": "/sol/fl1",
+            "type": "string",
+            "description": "Flow1_MAINS"
+        },
+        {
+            "endpoint": "/sol/fl3",
+            "type": "string",
+            "description": "Flow3_LOAD"
+        },
+        {
+            "endpoint": "/sol/fl4",
+            "type": "string",
+            "description": "Flow4_BATTERY"
+        },
+        {
+            "endpoint": "/sol/fl5aid",
+            "type": "string",
+            "description": "Flow5a_IN_BYPASS_FULL_DI"
+        },
+        {
+            "endpoint": "/sol/fl5ais",
+            "type": "string",
+            "description": "Flow5a_IN_BYPASS_FULL_SI"
+        },
+        {
+            "endpoint": "/sol/fl5ao",
+            "type": "string",
+            "description": "Flow5a_OUT_BYPASS_FULL"
+        },
+        {
+            "endpoint": "/sol/fl5bid",
+            "type": "string",
+            "description": "Flow5b_IN_BYPASS_EMPTY_DI"
+        },
+        {
+            "endpoint": "/sol/fl5bis",
+            "type": "string",
+            "description": "Flow5b_IN_BYPASS_EMPTY_SI"
+        },
+        {
+            "endpoint": "/sol/fl5bo",
+            "type": "string",
+            "description": "Flow5b_OUT_BYPASS_EMPTY"
+        },
+        {
+            "endpoint": "/sol/ico1",
+            "type": "string",
+            "description": "Icon1_MAINS"
+        },
+        {
+            "endpoint": "/sol/ico2a",
+            "type": "string",
+            "description": "Icon2a_SYSTEM"
+        },
+        {
+            "endpoint": "/sol/ico2b",
+            "type": "string",
+            "description": "Icon2b_SYSTEM"
+        },
+        {
+            "endpoint": "/sol/ico3",
+            "type": "string",
+            "description": "Icon3_LOAD"
+        },
+        {
+            "endpoint": "/sol/ico4",
+            "type": "string",
+            "description": "Icon4_BATTERY"
+        },
+        {
+            "endpoint": "/sol/ico5a",
+            "type": "string",
+            "description": "Icon5a_BYPASS"
+        },
+        {
+            "endpoint": "/sol/ico5b",
+            "type": "string",
+            "description": "Icon5b_MANUAL_BYPASS"
+        },
+        {
+            "endpoint": "/sol/ico5c",
+            "type": "string",
+            "description": "Icon5c_BYPASS_DISABLED"
+        },
+        {
+            "endpoint": "/sol/ld1",
+            "type": "string",
+            "description": "Gauge_LOAD_L1"
+        },
+        {
+            "endpoint": "/sol/ld2",
+            "type": "string",
+            "description": "Gauge_LOAD_L2"
+        },
+        {
+            "endpoint": "/sol/ld3",
+            "type": "string",
+            "description": "Gauge_LOAD_L3"
+        },
+        {
+            "endpoint": "/sol/stc",
+            "type": "string",
+            "description": "System Status Color"
+        }
+    ]
+}
