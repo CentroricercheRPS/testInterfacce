@@ -1,5 +1,5 @@
 {
-    "interface_name": "com.rps.RealtimeTT",
+    "interface_name": "com.rps.RealtimeTM",
     "version_major": 0,
     "version_minor": 1,
     "type": "datastream",
@@ -9,7 +9,7 @@
     "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\nI dati devono essere archiviati per 24 ore",
     "mappings": [
         {
-            "endpoint": "/tt/by1",
+            "endpoint": "/tm/by1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -18,7 +18,7 @@
             "doc": "Bypass voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tt/byf",
+            "endpoint": "/tm/byf",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -27,7 +27,7 @@
             "doc": "Bypass frequency"
         },
         {
-            "endpoint": "/tt/fri",
+            "endpoint": "/tm/fri",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -36,7 +36,7 @@
             "doc": "Input frequency"
         },
         {
-            "endpoint": "/tt/fro",
+            "endpoint": "/tm/fro",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -45,7 +45,7 @@
             "doc": "Output frequency"
         },
         {
-            "endpoint": "/tt/ld1",
+            "endpoint": "/tm/ld1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -54,7 +54,7 @@
             "doc": "Load phase L1"
         },
         {
-            "endpoint": "/tt/vbn",
+            "endpoint": "/tm/vbn",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -63,7 +63,7 @@
             "doc": "Battery voltage of negative bench"
         },
         {
-            "endpoint": "/tt/vbp",
+            "endpoint": "/tm/vbp",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -72,7 +72,7 @@
             "doc": "Battery voltage of positive bench"
         },
         {
-            "endpoint": "/tt/vi1",
+            "endpoint": "/tm/vi1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -81,7 +81,7 @@
             "doc": "Input voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tt/vi2",
+            "endpoint": "/tm/vi2",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -90,7 +90,7 @@
             "doc": "Input voltage (Ph-N) V2"
         },
         {
-            "endpoint": "/tt/vi3",
+            "endpoint": "/tm/vi3",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -99,7 +99,7 @@
             "doc": "Input voltage (Ph-N) V3"
         },
         {
-            "endpoint": "/tt/vo1",
+            "endpoint": "/tm/vo1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -108,7 +108,7 @@
             "doc": "Output voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tt/wo1",
+            "endpoint": "/tm/wo1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -117,7 +117,7 @@
             "doc": "Output active power phase L1"
         },
         {
-            "endpoint": "/tt/sta",
+            "endpoint": "/tm/sta",
             "type": "string",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
