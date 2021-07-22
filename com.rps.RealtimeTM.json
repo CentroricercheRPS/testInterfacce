@@ -1,5 +1,5 @@
 {
-    "interface_name": "com.rps.RealtimeTM",
+    "interface_name": "com.rps.RealtimeTT",
     "version_major": 0,
     "version_minor": 1,
     "type": "datastream",
@@ -9,7 +9,7 @@
     "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\nI dati devono essere archiviati per 24 ore",
     "mappings": [
         {
-            "endpoint": "/tm/by1",
+            "endpoint": "/tt/by1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -18,7 +18,7 @@
             "doc": "Bypass voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tm/byf",
+            "endpoint": "/tt/byf",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -27,7 +27,7 @@
             "doc": "Bypass frequency"
         },
         {
-            "endpoint": "/tm/fri",
+            "endpoint": "/tt/fri",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -36,7 +36,7 @@
             "doc": "Input frequency"
         },
         {
-            "endpoint": "/tm/fro",
+            "endpoint": "/tt/fro",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -45,7 +45,7 @@
             "doc": "Output frequency"
         },
         {
-            "endpoint": "/tm/ld1",
+            "endpoint": "/tt/ld1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -54,7 +54,7 @@
             "doc": "Load phase L1"
         },
         {
-            "endpoint": "/tm/vbn",
+            "endpoint": "/tt/vbn",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -63,7 +63,7 @@
             "doc": "Battery voltage of negative bench"
         },
         {
-            "endpoint": "/tm/vbp",
+            "endpoint": "/tt/vbp",
             "type": "double",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -72,7 +72,7 @@
             "doc": "Battery voltage of positive bench"
         },
         {
-            "endpoint": "/tm/vi1",
+            "endpoint": "/tt/vi1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -81,7 +81,7 @@
             "doc": "Input voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tm/vi2",
+            "endpoint": "/tt/vi2",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -90,7 +90,7 @@
             "doc": "Input voltage (Ph-N) V2"
         },
         {
-            "endpoint": "/tm/vi3",
+            "endpoint": "/tt/vi3",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -99,7 +99,7 @@
             "doc": "Input voltage (Ph-N) V3"
         },
         {
-            "endpoint": "/tm/vo1",
+            "endpoint": "/tt/vo1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
@@ -108,13 +108,22 @@
             "doc": "Output voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tm/wo1",
+            "endpoint": "/tt/wo1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
             "description": "kW/10",
             "doc": "Output active power phase L1"
+        },
+        {
+            "endpoint": "/tt/sta",
+            "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Status",
+            "doc": "System status code"
         }
     ]
 }
