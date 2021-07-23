@@ -1,0 +1,76 @@
+{
+    "interface_name": "com.rps.SynopticLineInteractive",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "properties",
+    "ownership": "device",
+    "description": "Sinottico per Line Interactive",
+    "doc": "Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tCyan\n3\tBlue\n4\tOrange\n5\tRed",
+    "mappings": [
+        {
+            "endpoint": "/sli/aut",
+            "type": "string",
+            "description": "Autonomy time"
+        },
+        {
+            "endpoint": "/sli/bat",
+            "type": "string",
+            "description": "Battery charge"
+        },
+        {
+            "endpoint": "/sli/fl1",
+            "type": "string",
+            "description": "Flow1_MAINS"
+        },
+        {
+            "endpoint": "/sli/fl3",
+            "type": "string",
+            "description": "Flow3_LOAD"
+        },
+        {
+            "endpoint": "/sli/fl4a",
+            "type": "string",
+            "description": "Flow4a_BATTERY"
+        },
+        {
+            "endpoint": "/sli/fl4b",
+            "type": "string",
+            "description": "Flow4b_BATTERY"
+        },
+        {
+            "endpoint": "/sli/ico1",
+            "type": "string",
+            "description": "Icon1_MAINS"
+        },
+        {
+            "endpoint": "/sli/ico2a",
+            "type": "string",
+            "description": "Icon2a_SYSTEM"
+        },
+        {
+            "endpoint": "/sli/ico2b",
+            "type": "string",
+            "description": "Icon2b_SYSTEM"
+        },
+        {
+            "endpoint": "/sli/ico3",
+            "type": "string",
+            "description": "Icon3_LOAD"
+        },
+        {
+            "endpoint": "/sli/ico4",
+            "type": "string",
+            "description": "Icon4_BATTERY"
+        },
+        {
+            "endpoint": "/sli/ld1",
+            "type": "string",
+            "description": "Gauge_LOAD"
+        },
+        {
+            "endpoint": "/sli/stc",
+            "type": "string",
+            "description": "System Status Color"
+        }
+    ]
+}
