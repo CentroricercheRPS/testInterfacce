@@ -1,0 +1,15 @@
+{
+    "interface_name": "com.rps.Control",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "properties",
+    "ownership": "server",
+    "description": "Proprietà di controllo della Netman",
+    "mappings": [
+        {
+            "endpoint": "/c/en",
+            "type": "boolean",
+            "description": "Enable communication"
+        }
+    ]
+}
