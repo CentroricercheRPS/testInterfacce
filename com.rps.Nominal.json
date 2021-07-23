@@ -1,0 +1,70 @@
+{
+    "interface_name": "com.rps.Nominal",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "properties",
+    "ownership": "device",
+    "description": "Dati nominali del dispositivo",
+    "mappings": [
+        {
+            "endpoint": "/n/pn",
+            "type": "string",
+            "description": "Part number"
+        },
+        {
+            "endpoint": "/n/sn",
+            "type": "string",
+            "description": "Serial number"
+        },
+        {
+            "endpoint": "/n/va",
+            "type": "string",
+            "description": "Power kVA"
+        },
+        {
+            "endpoint": "/n/w",
+            "type": "string",
+            "description": "Power kW"
+        },
+        {
+            "endpoint": "/n/bc",
+            "type": "string",
+            "description": "Battery capacity Ah"
+        },
+        {
+            "endpoint": "/n/bv",
+            "type": "string",
+            "description": "Battery voltage Vdc"
+        },
+        {
+            "endpoint": "/n/fw",
+            "type": "string",
+            "description": "Firmware version"
+        },
+        {
+            "endpoint": "/n/cv",
+            "type": "string",
+            "description": "Card version"
+        },
+        {
+            "endpoint": "/n/nsn",
+            "type": "string",
+            "description": "Netman serial number"
+        },
+        {
+            "endpoint": "/n/mac",
+            "type": "string",
+            "description": "MAC Address"
+        },
+        {
+            "endpoint": "/n/nav",
+            "type": "string",
+            "description": "Netman application version"
+        },
+        {
+            "endpoint": "/n/nsv",
+            "type": "string",
+            "description": "Netman system version"
+        }
+    ]
+}
