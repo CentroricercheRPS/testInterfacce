@@ -99,6 +99,33 @@
             "doc": "Output active power phase L1"
         },
         {
+            "endpoint": "/tt/chg",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "Charge"
+        },
+        {
+            "endpoint": "/tt/tim",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "min",
+            "doc": "Autonomy time"
+        },
+        {
+            "endpoint": "/tt/tsy",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "System temperature"
+        },
+        {
             "endpoint": "/mm/sta",
             "type": "string",
             "database_retention_policy": "use_ttl",
