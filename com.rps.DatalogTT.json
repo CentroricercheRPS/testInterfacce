@@ -15,7 +15,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V1"
+            "doc": "Average value of Input voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/tt/vi2",
@@ -24,7 +24,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V2"
+            "doc": "Average value of Input voltage (Ph-N) V2"
         },
         {
             "endpoint": "/datalog/tt/vi3",
@@ -33,7 +33,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V3"
+            "doc": "Average value of Input voltage (Ph-N) V3"
         },
         {
             "endpoint": "/datalog/tt/fri",
@@ -42,7 +42,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "Hz/10",
-            "doc": "Input frequency"
+            "doc": "Average value of Input frequency"
         },
         {
             "endpoint": "/datalog/tt/bv1",
@@ -51,7 +51,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Bypass voltage (Ph-N) V1"
+            "doc": "Average value of Bypass voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/tt/bv2",
@@ -60,7 +60,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Bypass voltage (Ph-N) V2"
+            "doc": "Average value of Bypass voltage (Ph-N) V2"
         },
         {
             "endpoint": "/datalog/tt/bv3",
@@ -69,7 +69,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Bypass voltage (Ph-N) V3"
+            "doc": "Average value of Bypass voltage (Ph-N) V3"
         },
         {
             "endpoint": "/datalog/tt/byf",
@@ -78,7 +78,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "Hz/10",
-            "doc": "Bypass frequency"
+            "doc": "Average value of Bypass frequency"
         },
         {
             "endpoint": "/datalog/tt/vo1",
@@ -87,7 +87,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Output voltage (Ph-N) V1"
+            "doc": "Average value of Output voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/tt/vo2",
@@ -96,7 +96,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Output voltage (Ph-N) V2"
+            "doc": "Average value of Output voltage (Ph-N) V2"
         },
         {
             "endpoint": "/datalog/tt/vo3",
@@ -105,7 +105,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Output voltage (Ph-N) V3"
+            "doc": "Average value of Output voltage (Ph-N) V3"
         },
         {
             "endpoint": "/datalog/tt/fro",
@@ -114,7 +114,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "Hz/10",
-            "doc": "Output frequency"
+            "doc": "Average value of Output frequency"
         },
         {
             "endpoint": "/datalog/tt/ld1",
@@ -123,7 +123,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L1"
+            "doc": "Average value of Load phase L1"
         },
         {
             "endpoint": "/datalog/tt/ld2",
@@ -132,7 +132,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L2"
+            "doc": "Average value of Load phase L2"
         },
         {
             "endpoint": "/datalog/tt/ld3",
@@ -141,7 +141,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L3"
+            "doc": "Average value of Load phase L3"
         },
         {
             "endpoint": "/datalog/tt/wo1",
@@ -150,7 +150,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "doc": "Average value of Output active power phase L1"
         },
         {
             "endpoint": "/datalog/tt/wo2",
@@ -159,7 +159,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L2"
+            "doc": "Average value of Output active power phase L2"
         },
         {
             "endpoint": "/datalog/tt/wo3",
@@ -168,7 +168,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L3"
+            "doc": "Average value of Output active power phase L3"
         },
         {
             "endpoint": "/datalog/tt/vi1l",
@@ -177,7 +177,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V1"
+            "doc": "Minimum value of Input voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/tt/vi2l",
@@ -186,7 +186,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V2"
+            "doc": "Minimum value of Input voltage (Ph-N) V2"
         },
         {
             "endpoint": "/datalog/tt/vi3l",
@@ -195,7 +195,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V3"
+            "doc": "Minimum value of Input voltage (Ph-N) V3"
         },
         {
             "endpoint": "/datalog/tt/ld1l",
@@ -204,7 +204,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L1"
+            "doc": "Minimum value of Load phase L1"
         },
         {
             "endpoint": "/datalog/tt/ld2l",
@@ -213,7 +213,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L2"
+            "doc": "Minimum value of Load phase L2"
         },
         {
             "endpoint": "/datalog/tt/ld3l",
@@ -222,7 +222,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L3"
+            "doc": "Minimum value of Load phase L3"
         },
         {
             "endpoint": "/datalog/tt/wo1l",
@@ -231,7 +231,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "doc": "Minimum value of Output active power phase L1"
         },
         {
             "endpoint": "/datalog/tt/wo2l",
@@ -240,7 +240,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L2"
+            "doc": "Minimum value of Output active power phase L2"
         },
         {
             "endpoint": "/datalog/tt/wo3l",
@@ -249,7 +249,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L3"
+            "doc": "Minimum value of Output active power phase L3"
         },
         {
             "endpoint": "/datalog/tt/vi1h",
@@ -258,7 +258,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V1"
+            "doc": "Maximum value of Input voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/tt/vi2h",
@@ -267,7 +267,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V2"
+            "doc": "Maximum value of Input voltage (Ph-N) V2"
         },
         {
             "endpoint": "/datalog/tt/vi3h",
@@ -276,7 +276,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V3"
+            "doc": "Maximum value of Input voltage (Ph-N) V3"
         },
         {
             "endpoint": "/datalog/tt/ld1h",
@@ -285,7 +285,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L1"
+            "doc": "Maximum value of Load phase L1"
         },
         {
             "endpoint": "/datalog/tt/ld2h",
@@ -294,7 +294,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L2"
+            "doc": "Maximum value of Load phase L2"
         },
         {
             "endpoint": "/datalog/tt/ld3h",
@@ -303,7 +303,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L3"
+            "doc": "Maximum value of Load phase L3"
         },
         {
             "endpoint": "/datalog/tt/wo1h",
@@ -312,7 +312,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "doc": "Maximum value of Output active power phase L1"
         },
         {
             "endpoint": "/datalog/tt/wo2h",
@@ -321,7 +321,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L2"
+            "doc": "Maximum value of Output active power phase L2"
         },
         {
             "endpoint": "/datalog/tt/wo3h",
@@ -330,7 +330,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L3"
+            "doc": "Maximum value of Output active power phase L3"
         },
         {
             "endpoint": "/datalog/tt/vbp",
@@ -339,7 +339,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V/10",
-            "doc": "Battery voltage of positive bench"
+            "doc": "Minimum value of Battery voltage of positive bench"
         },
         {
             "endpoint": "/datalog/tt/vbn",
@@ -348,7 +348,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V/10",
-            "doc": "Battery voltage of negative bench"
+            "doc": "Minimum value of Battery voltage of negative bench"
         },
         {
             "endpoint": "/datalog/tt/ibp",
@@ -357,7 +357,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "A/10",
-            "doc": "Battery current of positive bench"
+            "doc": "Maximum value of Battery current of positive bench"
         },
         {
             "endpoint": "/datalog/tt/ibn",
@@ -366,7 +366,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "A/10",
-            "doc": "Battery current of negative bench"
+            "doc": "Maximum value of Battery current of negative bench"
         },
         {
             "endpoint": "/datalog/tt/chg",
@@ -375,7 +375,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Charge%"
+            "doc": "Maximum value of Charge"
         },
         {
             "endpoint": "/datalog/tt/chgl",
@@ -384,7 +384,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Lower Charge%"
+            "doc": "Minimum value of Charge"
         },
         {
             "endpoint": "/datalog/tt/pbc",
@@ -447,7 +447,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "System temperature"
+            "doc": "Average value of System temperature"
         },
         {
             "endpoint": "/datalog/tt/tsyh",
@@ -456,7 +456,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "System temperature"
+            "doc": "Average value of System temperature"
         },
         {
             "endpoint": "/datalog/tt/tex",
@@ -465,7 +465,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "External battery temperature"
+            "doc": "Average value of External battery temperature"
         }
     ]
 }
