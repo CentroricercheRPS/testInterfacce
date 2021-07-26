@@ -1,166 +1,327 @@
 {
-    "interface_name": "com.rps.RealtimeTM",
+    "interface_name": "com.rps.DatalogTM",
     "version_major": 0,
     "version_minor": 1,
     "type": "datastream",
     "ownership": "device",
     "aggregation": "object",
-    "description": "Valori da storicizzare\n",
-    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\nI dati devono essere archiviati per 24 ore",
+    "description": "Valori da storicizzare",
+    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 60 minuti. I dati devono essere archiviati per 1/5 anni",
     "mappings": [
         {
-            "endpoint": "/tm/by1",
+            "endpoint": "/datalog/tm/vi1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Bypass voltage (Ph-N) V1"
-        },
-        {
-            "endpoint": "/tm/byf",
-            "type": "double",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Bypass frequency"
-        },
-        {
-            "endpoint": "/tm/fri",
-            "type": "double",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Input frequency"
-        },
-        {
-            "endpoint": "/tm/fro",
-            "type": "double",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Output frequency"
-        },
-        {
-            "endpoint": "/tm/ld1",
-            "type": "integer",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Load phase L1"
-        },
-        {
-            "endpoint": "/tm/vbn",
-            "type": "double",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "V/10",
-            "doc": "Battery voltage of negative bench"
-        },
-        {
-            "endpoint": "/tm/vbp",
-            "type": "double",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
-            "explicit_timestamp": true,
-            "description": "V/10",
-            "doc": "Battery voltage of positive bench"
-        },
-        {
-            "endpoint": "/tm/vi1",
-            "type": "integer",
-            "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
             "doc": "Input voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tm/vi2",
+            "endpoint": "/datalog/tm/vi2",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
             "doc": "Input voltage (Ph-N) V2"
         },
         {
-            "endpoint": "/tm/vi3",
+            "endpoint": "/datalog/tm/vi3",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
             "doc": "Input voltage (Ph-N) V3"
         },
         {
-            "endpoint": "/tm/vo1",
+            "endpoint": "/datalog/tm/fri",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "Hz/10",
+            "doc": "Input frequency"
+        },
+        {
+            "endpoint": "/datalog/tm/bv1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Bypass voltage (Ph-N) V1"
+        },
+        {
+            "endpoint": "/datalog/tm/byf",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "Hz/10",
+            "doc": "Bypass frequency"
+        },
+        {
+            "endpoint": "/datalog/tm/vo1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
             "doc": "Output voltage (Ph-N) V1"
         },
         {
-            "endpoint": "/tm/wo1",
+            "endpoint": "/datalog/tm/fro",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "Hz/10",
+            "doc": "Output frequency"
+        },
+        {
+            "endpoint": "/datalog/tm/ld1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "Load phase L1"
+        },
+        {
+            "endpoint": "/datalog/tm/wo1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
             "doc": "Output active power phase L1"
         },
         {
-            "endpoint": "/tm/chg",
+            "endpoint": "/datalog/tm/vi1l",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V1"
+        },
+        {
+            "endpoint": "/datalog/tm/vi2l",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V2"
+        },
+        {
+            "endpoint": "/datalog/tm/vi3l",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V3"
+        },
+        {
+            "endpoint": "/datalog/tm/ld1l",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Charge"
+            "doc": "Load phase L1"
         },
         {
-            "endpoint": "/tm/tim",
+            "endpoint": "/datalog/tm/wo1l",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "min",
-            "doc": "Autonomy time"
+            "description": "kW/10",
+            "doc": "Output active power phase L1"
         },
         {
-            "endpoint": "/tm/tsy",
+            "endpoint": "/datalog/tm/vi1h",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V1"
+        },
+        {
+            "endpoint": "/datalog/tm/vi2h",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V2"
+        },
+        {
+            "endpoint": "/datalog/tm/vi3h",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V",
+            "doc": "Input voltage (Ph-N) V3"
+        },
+        {
+            "endpoint": "/datalog/tm/ld1h",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "Load phase L1"
+        },
+        {
+            "endpoint": "/datalog/tm/wo1h",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "kW/10",
+            "doc": "Output active power phase L1"
+        },
+        {
+            "endpoint": "/datalog/tm/vbp",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V/10",
+            "doc": "Battery voltage of positive bench"
+        },
+        {
+            "endpoint": "/datalog/tm/vbn",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "V/10",
+            "doc": "Battery voltage of negative bench"
+        },
+        {
+            "endpoint": "/datalog/tm/ibp",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Battery current of positive bench"
+        },
+        {
+            "endpoint": "/datalog/tm/ibn",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Battery current of negative bench"
+        },
+        {
+            "endpoint": "/datalog/tm/chg",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "Charge%"
+        },
+        {
+            "endpoint": "/datalog/tm/chgl",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "Lower Charge%"
+        },
+        {
+            "endpoint": "/datalog/tm/pbc",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "% time Battery Charging"
+        },
+        {
+            "endpoint": "/datalog/tm/pbw",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "% time Battery Working"
+        },
+        {
+            "endpoint": "/datalog/tm/pby",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "% time ON BYPASS"
+        },
+        {
+            "endpoint": "/datalog/tm/pio",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "%",
+            "doc": "% time INVERTER ON"
+        },
+        {
+            "endpoint": "/datalog/tm/nbw",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "n°",
+            "doc": "Number of battery operations"
+        },
+        {
+            "endpoint": "/datalog/tm/nby",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "n°",
+            "doc": "Number of bypass operations"
+        },
+        {
+            "endpoint": "/datalog/tm/tsy",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
             "doc": "System temperature"
         },
         {
-            "endpoint": "/tm/sta",
-            "type": "string",
+            "endpoint": "/datalog/tm/tsyh",
+            "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "Status",
-            "doc": "System status code"
+            "description": "°C",
+            "doc": "System temperature"
         },
         {
-            "endpoint": "/tm/a/%{alarmid}",
-            "type": "boolean",
-            "allow_unset": true,
+            "endpoint": "/datalog/tm/tex",
+            "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 86400,
+            "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "Alarms",
-            "doc": "List of active Alarms"
+            "description": "°C",
+            "doc": "External battery temperature"
         }
     ]
 }
