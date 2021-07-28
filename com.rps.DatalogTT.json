@@ -537,7 +537,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "Average value of System temperature"
+            "doc": "Maximum value of System temperature"
         },
         {
             "endpoint": "/datalog/tt/tex",
