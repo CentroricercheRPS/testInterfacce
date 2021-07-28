@@ -99,6 +99,15 @@
             "doc": "Output active power phase L1"
         },
         {
+            "endpoint": "/datalog/tm/io1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Average value of Output current L1"
+        },
+        {
             "endpoint": "/datalog/tm/vi1l",
             "type": "integer",
             "database_retention_policy": "use_ttl",
@@ -187,6 +196,24 @@
             "explicit_timestamp": true,
             "description": "kW/10",
             "doc": "Output active power phase L1"
+        },
+        {
+            "endpoint": "/datalog/tm/io1h",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Maximum value of Output current L1"
+        },
+        {
+            "endpoint": "/datalog/tm/ipko1h",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 10000,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Maximum value of Output peak current L1"
         },
         {
             "endpoint": "/datalog/tm/vbp",
