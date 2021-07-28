@@ -1,0 +1,21 @@
+{
+    "interface_name": "com.rps.RealtimeEnvSensorsT",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "datastream",
+    "ownership": "device",
+    "aggregation": "object",
+    "description": "Valori da storicizzare",
+    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\\nI dati devono essere archiviati per 24 ore. Se non è installato nessun sensore opzionale, il pacchetto non viene inviato\n",
+    "mappings": [
+        {
+            "endpoint": "/est/%{sensor_id}/t",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "°C",
+            "doc": "Temperature"
+        }
+    ]
+}
