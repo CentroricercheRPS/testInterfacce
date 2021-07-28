@@ -99,6 +99,24 @@
             "doc": "Output active power phase L1"
         },
         {
+            "endpoint": "/mm/io1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Output current L1"
+        },
+        {
+            "endpoint": "/mm/ipko1",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "A/10",
+            "doc": "Output peak current L1"
+        },
+        {
             "endpoint": "/mm/chg",
             "type": "integer",
             "database_retention_policy": "use_ttl",
