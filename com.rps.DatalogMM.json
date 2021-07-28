@@ -33,7 +33,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Bypass voltage (Ph-N) V1"
+            "doc": "Average value of Bypass voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/mm/byf",
@@ -42,7 +42,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "Hz/10",
-            "doc": "Bypass frequency"
+            "doc": "Average value of Bypass frequency"
         },
         {
             "endpoint": "/datalog/mm/vo1",
@@ -51,7 +51,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Output voltage (Ph-N) V1"
+            "doc": "Average value of Output voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/mm/fro",
@@ -60,7 +60,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "Hz/10",
-            "doc": "Output frequency"
+            "doc": "Average value of Output frequency"
         },
         {
             "endpoint": "/datalog/mm/ld1",
@@ -69,7 +69,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L1"
+            "doc": "Minimum value of Load phase L1"
         },
         {
             "endpoint": "/datalog/mm/wo1",
@@ -78,7 +78,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "doc": "Minimum value of Output active power phase L1"
         },
         {
             "endpoint": "/datalog/mm/io1",
@@ -96,7 +96,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V1"
+            "doc": "Minimum value of Input voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/mm/ld1l",
@@ -105,7 +105,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L1"
+            "doc": "Minimum value of Load phase L1"
         },
         {
             "endpoint": "/datalog/mm/wo1l",
@@ -114,7 +114,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "doc": "Minimum value of Output active power phase L1"
         },
         {
             "endpoint": "/datalog/mm/vi1h",
@@ -123,7 +123,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V",
-            "doc": "Input voltage (Ph-N) V1"
+            "doc": "Maximum value of Input voltage (Ph-N) V1"
         },
         {
             "endpoint": "/datalog/mm/ld1h",
@@ -132,7 +132,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Load phase L1"
+            "doc": "Maximum value of Load phase L1"
         },
         {
             "endpoint": "/datalog/mm/wo1h",
@@ -141,7 +141,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "doc": "Maximum value of Output active power phase L1"
         },
         {
             "endpoint": "/datalog/mm/io1h",
@@ -168,7 +168,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V/10",
-            "doc": "Battery voltage of positive bench"
+            "doc": "Minimum value of Battery voltage of positive bench"
         },
         {
             "endpoint": "/datalog/mm/vbn",
@@ -177,7 +177,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "V/10",
-            "doc": "Battery voltage of negative bench"
+            "doc": "Minimum value of Battery voltage of negative bench"
         },
         {
             "endpoint": "/datalog/mm/ibp",
@@ -186,7 +186,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "A/10",
-            "doc": "Battery current of positive bench"
+            "doc": "Maximum value of Battery current of positive bench"
         },
         {
             "endpoint": "/datalog/mm/ibn",
@@ -195,7 +195,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "A/10",
-            "doc": "Battery current of negative bench"
+            "doc": "Maximum value of Battery current of negative bench"
         },
         {
             "endpoint": "/datalog/mm/chg",
@@ -204,7 +204,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Charge%"
+            "doc": "Maximum value of Charge"
         },
         {
             "endpoint": "/datalog/mm/chgl",
@@ -213,7 +213,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "%",
-            "doc": "Lower Charge%"
+            "doc": "Minimum value of Charge"
         },
         {
             "endpoint": "/datalog/mm/pbc",
@@ -276,7 +276,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "System temperature"
+            "doc": "Average value of System temperature"
         },
         {
             "endpoint": "/datalog/mm/tsyh",
@@ -285,7 +285,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "System temperature"
+            "doc": "Maximum value of System temperature"
         },
         {
             "endpoint": "/datalog/mm/tex",
@@ -294,7 +294,7 @@
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
             "description": "°C",
-            "doc": "External battery temperature"
+            "doc": "Average value of External battery temperature"
         }
     ]
 }
