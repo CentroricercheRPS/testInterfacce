@@ -5,8 +5,7 @@
     "type": "datastream",
     "ownership": "device",
     "aggregation": "object",
-    "description": "Valori da storicizzare\n",
-    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\nI dati devono essere archiviati per 24 ore",
+    "description": "Valori da storicizzare. Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 10 sec\nI dati devono essere archiviati per 24 ore",
     "mappings": [
         {
             "endpoint": "/tt/by1",
@@ -14,8 +13,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Bypass voltage (Ph-N) V1"
+            "description": "Bypass voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/tt/by2",
@@ -23,8 +21,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Bypass voltage (Ph-N) V2"
+            "description": "Bypass voltage (Ph-N) V2 [V]"
         },
         {
             "endpoint": "/tt/by3",
@@ -32,8 +29,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Bypass voltage (Ph-N) V3"
+            "description": "Bypass voltage (Ph-N) V3 [V]"
         },
         {
             "endpoint": "/tt/byf",
@@ -41,8 +37,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Bypass frequency"
+            "description": "Bypass frequency [Hz/10]"
         },
         {
             "endpoint": "/tt/fri",
@@ -50,8 +45,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Input frequency"
+            "description": "Input frequency [Hz/10]"
         },
         {
             "endpoint": "/tt/fro",
@@ -59,8 +53,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Output frequency"
+            "description": "Output frequency [Hz/10]"
         },
         {
             "endpoint": "/tt/ld1",
@@ -68,8 +61,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Load phase L1"
+            "description": "Load phase L1 [%]"
         },
         {
             "endpoint": "/tt/ld2",
@@ -77,8 +69,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Load phase L2"
+            "description": "Load phase L2 [%]"
         },
         {
             "endpoint": "/tt/ld3",
@@ -86,8 +77,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Load phase L3"
+            "description": "Load phase L3 [%]"
         },
         {
             "endpoint": "/tt/vbn",
@@ -95,8 +85,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V/10",
-            "doc": "Battery voltage of negative bench"
+            "description": "Battery voltage of negative bench [V/10]"
         },
         {
             "endpoint": "/tt/vbp",
@@ -104,8 +93,23 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V/10",
-            "doc": "Battery voltage of positive bench"
+            "description": "Battery voltage of positive bench [V/10]"
+        },
+        {
+            "endpoint": "/tt/ibn",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Battery current of negative bench [A/10]"
+        },
+        {
+            "endpoint": "/tt/ibp",
+            "type": "double",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Battery current of positive bench [A/10]"
         },
         {
             "endpoint": "/tt/vi1",
@@ -113,8 +117,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Input voltage (Ph-N) V1"
+            "description": "Input voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/tt/vi2",
@@ -122,8 +125,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Input voltage (Ph-N) V2"
+            "description": "Input voltage (Ph-N) V2 [V]"
         },
         {
             "endpoint": "/tt/vi3",
@@ -131,8 +133,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Input voltage (Ph-N) V3"
+            "description": "Input voltage (Ph-N) V3 [V]"
         },
         {
             "endpoint": "/tt/vo1",
@@ -140,8 +141,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Output voltage (Ph-N) V1"
+            "description": "Output voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/tt/vo2",
@@ -149,8 +149,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Output voltage (Ph-N) V2"
+            "description": "Output voltage (Ph-N) V2 [V]"
         },
         {
             "endpoint": "/tt/vo3",
@@ -158,8 +157,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Output voltage (Ph-N) V3"
+            "description": "Output voltage (Ph-N) V3 [V]"
         },
         {
             "endpoint": "/tt/wo1",
@@ -167,8 +165,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "kW/10",
-            "doc": "Output active power phase L1"
+            "description": "Output active power phase L1 [kW/10]"
         },
         {
             "endpoint": "/tt/wo2",
@@ -176,8 +173,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "kW/10",
-            "doc": "Output active power phase L2"
+            "description": "Output active power phase L2 [kW/10]"
         },
         {
             "endpoint": "/tt/wo3",
@@ -185,8 +181,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "kW/10",
-            "doc": "Output active power phase L3"
+            "description": "Output active power phase L3 [kW/10]"
         },
         {
             "endpoint": "/tt/io1",
@@ -194,8 +189,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Output current L1"
+            "description": "Output current L1 [A/10]"
         },
         {
             "endpoint": "/tt/io2",
@@ -203,8 +197,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Output current L2"
+            "description": "Output current L2 [A/10]"
         },
         {
             "endpoint": "/tt/io3",
@@ -212,8 +205,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Output current L3"
+            "description": "Output current L3 [A/10]"
         },
         {
             "endpoint": "/tt/ipko1",
@@ -221,8 +213,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Output peak current L1"
+            "description": "Output peak current L1 [A/10]"
         },
         {
             "endpoint": "/tt/ipko2",
@@ -230,8 +221,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Output peak current L2"
+            "description": "Output peak current L2 [A/10]"
         },
         {
             "endpoint": "/tt/ipko3",
@@ -239,8 +229,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Output peak current L3"
+            "description": "Output peak current L3 [A/10]"
         },
         {
             "endpoint": "/tt/chg",
@@ -248,8 +237,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Charge"
+            "description": "Charge [%]"
         },
         {
             "endpoint": "/tt/tim",
@@ -257,8 +245,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "min",
-            "doc": "Autonomy time"
+            "description": "Autonomy time [min]"
         },
         {
             "endpoint": "/tt/tsy",
@@ -266,8 +253,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "System temperature"
+            "description": "System temperature [°C]"
         },
         {
             "endpoint": "/tt/sta",
@@ -275,8 +261,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "Status",
-            "doc": "System status code"
+            "description": "System status code"
         },
         {
             "endpoint": "/tt/a/%{alarmid}",
@@ -285,8 +270,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
             "explicit_timestamp": true,
-            "description": "Alarms",
-            "doc": "List of active Alarms"
+            "description": "List of active Alarms"
         }
     ]
 }
