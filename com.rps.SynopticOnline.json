@@ -4,8 +4,7 @@
     "version_minor": 1,
     "type": "properties",
     "ownership": "device",
-    "description": "Sinottico per Online",
-    "doc": "Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tCyan\n3\tBlue\n4\tOrange\n5\tRed",
+    "description": "Sinottico per Line Interactive. Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tCyan\n3\tBlue\n4\tOrange\n5\tRed",
     "mappings": [
         {
             "endpoint": "/sol/aut",
