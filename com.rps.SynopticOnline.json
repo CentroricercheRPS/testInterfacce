@@ -9,12 +9,12 @@
         {
             "endpoint": "/sol/aut",
             "type": "string",
-            "description": "Autonomy time"
+            "description": "Autonomy_time_icon"
         },
         {
             "endpoint": "/sol/bat",
             "type": "string",
-            "description": "Battery charge"
+            "description": "Gauge_BAT_CHARGE"
         },
         {
             "endpoint": "/sol/fl1",
