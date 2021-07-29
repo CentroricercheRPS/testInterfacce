@@ -5,8 +5,7 @@
     "type": "datastream",
     "ownership": "device",
     "aggregation": "object",
-    "description": "Valori da storicizzare dei sensori ambientali",
-    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 60 minuti. I dati devono essere archiviati per 1/5 anni",
+    "description": "Valori da storicizzare dei sensori ambientali. Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 60 minuti. I dati devono essere archiviati per 1/5 anni",
     "mappings": [
         {
             "endpoint": "/dataloges/t1",
@@ -14,8 +13,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Sensor 1 temperature"
+            "description": "Sensor 1 temperature [°C]"
         },
         {
             "endpoint": "/dataloges/t2",
@@ -23,8 +21,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Sensor 2 temperature"
+            "description": "Sensor 2 temperature [°C]"
         },
         {
             "endpoint": "/dataloges/t3",
@@ -32,8 +29,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Sensor 3 temperature"
+            "description": "Sensor 3 temperature [°C]"
         },
         {
             "endpoint": "/dataloges/h1",
@@ -41,8 +37,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Sensor 1 humidity"
+            "description": "Sensor 1 humidity [%RH]"
         },
         {
             "endpoint": "/dataloges/h2",
@@ -50,8 +45,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Sensor 2 humidity"
+            "description": "Sensor 2 humidity [%RH]"
         },
         {
             "endpoint": "/dataloges/h3",
@@ -59,8 +53,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Sensor 3 humidity"
+            "description": "Sensor 3 humidity [%RH]"
         }
     ]
 }
