@@ -9,67 +9,67 @@
         {
             "endpoint": "/sli/aut",
             "type": "string",
-            "description": "Autonomy time"
+            "description": "Autonomy_time_icon"
         },
         {
             "endpoint": "/sli/bat",
             "type": "string",
-            "description": "Battery charge"
+            "description": "Gauge_BAT_CHARGE"
         },
         {
             "endpoint": "/sli/fl1",
             "type": "string",
-            "description": "Flow1_MAINS"
+            "description": "Flow1_MAINS_LI"
         },
         {
             "endpoint": "/sli/fl3",
             "type": "string",
-            "description": "Flow3_LOAD"
+            "description": "Flow3_LOAD_LI"
         },
         {
             "endpoint": "/sli/fl4a",
             "type": "string",
-            "description": "Flow4a_BATTERY"
+            "description": "Flow4a_BATTERY_LI"
         },
         {
             "endpoint": "/sli/fl4b",
             "type": "string",
-            "description": "Flow4b_BATTERY"
+            "description": "Flow4b_BATTERY_LI"
         },
         {
             "endpoint": "/sli/ico1",
             "type": "string",
-            "description": "Icon1_MAINS"
+            "description": "Icon1_MAINS_LI"
         },
         {
             "endpoint": "/sli/ico2a",
             "type": "string",
-            "description": "Icon2a_SYSTEM"
+            "description": "Icon2a_SYSTEM_LI"
         },
         {
             "endpoint": "/sli/ico2b",
             "type": "string",
-            "description": "Icon2b_SYSTEM"
+            "description": "Icon2b_SYSTEM_LI"
         },
         {
             "endpoint": "/sli/ico3",
             "type": "string",
-            "description": "Icon3_LOAD"
+            "description": "Icon3_LOAD_LI"
         },
         {
             "endpoint": "/sli/ico4",
             "type": "string",
-            "description": "Icon4_BATTERY"
+            "description": "Icon4_BATTERY_LI"
         },
         {
             "endpoint": "/sli/ld1",
             "type": "string",
-            "description": "Gauge_LOAD"
+            "description": "Gauge_LOAD_LI"
         },
         {
             "endpoint": "/sli/stc",
             "type": "string",
-            "description": "System Status Color"
+            "description": "System Status Color_LI"
         }
     ]
 }
