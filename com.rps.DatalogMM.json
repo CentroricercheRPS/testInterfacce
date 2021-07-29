@@ -5,8 +5,7 @@
     "type": "datastream",
     "ownership": "device",
     "aggregation": "object",
-    "description": "Valori da storicizzare",
-    "doc": "Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 60 minuti. I dati devono essere archiviati per 1/5 anni",
+    "description": "Valori da storicizzare. Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 60 minuti. I dati devono essere archiviati per 1/5 anni",
     "mappings": [
         {
             "endpoint": "/datalog/mm/vi1",
@@ -14,8 +13,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Average value of Input voltage (Ph-N) V1"
+            "description": "Average value of Input voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/datalog/mm/fri",
@@ -23,8 +21,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Average value of Input frequency"
+            "description": "Average value of Input frequency [Hz/10]"
         },
         {
             "endpoint": "/datalog/mm/bv1",
@@ -32,8 +29,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Average value of Bypass voltage (Ph-N) V1"
+            "description": "Average value of Bypass voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/datalog/mm/byf",
@@ -41,8 +37,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Average value of Bypass frequency"
+            "description": "Average value of Bypass frequency [Hz/10]"
         },
         {
             "endpoint": "/datalog/mm/vo1",
@@ -50,8 +45,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Average value of Output voltage (Ph-N) V1"
+            "description": "Average value of Output voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/datalog/mm/fro",
@@ -59,8 +53,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "Hz/10",
-            "doc": "Average value of Output frequency"
+            "description": "Average value of Output frequency [Hz/10]"
         },
         {
             "endpoint": "/datalog/mm/ld1",
@@ -68,8 +61,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Minimum value of Load phase L1"
+            "description": "Average value of Load phase L1 [%]"
         },
         {
             "endpoint": "/datalog/mm/wo1",
@@ -77,8 +69,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "kW/10",
-            "doc": "Minimum value of Output active power phase L1"
+            "description": "Average value of Output active power phase L1 [kW/10]"
         },
         {
             "endpoint": "/datalog/mm/io1",
@@ -86,8 +77,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Average value of Output current L1"
+            "description": "Average value of Output current L1 [A/10]"
         },
         {
             "endpoint": "/datalog/mm/vi1l",
@@ -95,8 +85,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Minimum value of Input voltage (Ph-N) V1"
+            "description": "Minimum value of Input voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/datalog/mm/ld1l",
@@ -104,8 +93,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Minimum value of Load phase L1"
+            "description": "Minimum value of Load phase L1 [%]"
         },
         {
             "endpoint": "/datalog/mm/wo1l",
@@ -113,8 +101,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "kW/10",
-            "doc": "Minimum value of Output active power phase L1"
+            "description": "Minimum value of Output active power phase L1 [kW/10]"
         },
         {
             "endpoint": "/datalog/mm/vi1h",
@@ -122,8 +109,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V",
-            "doc": "Maximum value of Input voltage (Ph-N) V1"
+            "description": "Maximum value of Input voltage (Ph-N) V1 [V]"
         },
         {
             "endpoint": "/datalog/mm/ld1h",
@@ -131,8 +117,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Maximum value of Load phase L1"
+            "description": "Maximum value of Load phase L1 [%]"
         },
         {
             "endpoint": "/datalog/mm/wo1h",
@@ -140,8 +125,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "kW/10",
-            "doc": "Maximum value of Output active power phase L1"
+            "description": "Maximum value of Output active power phase L1 [kW/10]"
         },
         {
             "endpoint": "/datalog/mm/io1h",
@@ -149,8 +133,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Maximum value of Output current L1"
+            "description": "Maximum value of Output current L1 [A/10]"
         },
         {
             "endpoint": "/datalog/mm/ipko1h",
@@ -158,8 +141,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Maximum value of Output peak current L1"
+            "description": "Maximum value of Output peak current L1 [A/10]"
         },
         {
             "endpoint": "/datalog/mm/vbp",
@@ -167,8 +149,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V/10",
-            "doc": "Minimum value of Battery voltage of positive bench"
+            "description": "Minimum value of Battery voltage of positive bench [V/10]"
         },
         {
             "endpoint": "/datalog/mm/vbn",
@@ -176,8 +157,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "V/10",
-            "doc": "Minimum value of Battery voltage of negative bench"
+            "description": "Minimum value of Battery voltage of negative bench [V/10]"
         },
         {
             "endpoint": "/datalog/mm/ibp",
@@ -185,8 +165,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Maximum value of Battery current of positive bench"
+            "description": "Maximum value of Battery current of positive bench [A/10]"
         },
         {
             "endpoint": "/datalog/mm/ibn",
@@ -194,8 +173,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "A/10",
-            "doc": "Maximum value of Battery current of negative bench"
+            "description": "Maximum value of Battery current of negative bench [A/10]"
         },
         {
             "endpoint": "/datalog/mm/chg",
@@ -203,8 +181,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Maximum value of Charge"
+            "description": "Maximum value of Charge [%]"
         },
         {
             "endpoint": "/datalog/mm/chgl",
@@ -212,8 +189,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "Minimum value of Charge"
+            "description": "Minimum value of Charge [%]"
         },
         {
             "endpoint": "/datalog/mm/pbc",
@@ -221,8 +197,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "% time Battery Charging"
+            "description": "% time Battery Charging"
         },
         {
             "endpoint": "/datalog/mm/pbw",
@@ -230,8 +205,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "% time Battery Working"
+            "description": "% time Battery Working"
         },
         {
             "endpoint": "/datalog/mm/pby",
@@ -239,8 +213,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "% time ON BYPASS"
+            "description": "% time ON BYPASS"
         },
         {
             "endpoint": "/datalog/mm/pio",
@@ -248,8 +221,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "%",
-            "doc": "% time INVERTER ON"
+            "description": "% time INVERTER ON"
         },
         {
             "endpoint": "/datalog/mm/nbw",
@@ -257,8 +229,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "n°",
-            "doc": "Number of battery operations"
+            "description": "Number of battery operations [n°]"
         },
         {
             "endpoint": "/datalog/mm/nby",
@@ -266,8 +237,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "n°",
-            "doc": "Number of bypass operations"
+            "description": "Number of bypass operations [n°]"
         },
         {
             "endpoint": "/datalog/mm/tsy",
@@ -275,8 +245,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Average value of System temperature"
+            "description": "Average value of System temperature [°C]"
         },
         {
             "endpoint": "/datalog/mm/tsyh",
@@ -284,8 +253,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Maximum value of System temperature"
+            "description": "Maximum value of System temperature [°C]"
         },
         {
             "endpoint": "/datalog/mm/tex",
@@ -293,8 +261,7 @@
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 10000,
             "explicit_timestamp": true,
-            "description": "°C",
-            "doc": "Average value of External battery temperature"
+            "description": "Average value of External battery temperature [°C]"
         }
     ]
 }
