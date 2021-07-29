@@ -18,22 +18,22 @@
         },
         {
             "endpoint": "/n/va",
-            "type": "string",
-            "description": "Power kVA"
+            "type": "integer",
+            "description": "Power VA"
         },
         {
             "endpoint": "/n/w",
-            "type": "string",
-            "description": "Power kW"
+            "type": "integer",
+            "description": "Power W"
         },
         {
             "endpoint": "/n/bc",
-            "type": "string",
+            "type": "integer",
             "description": "Battery capacity Ah"
         },
         {
             "endpoint": "/n/bv",
-            "type": "string",
+            "type": "integer",
             "description": "Battery voltage Vdc"
         },
         {
