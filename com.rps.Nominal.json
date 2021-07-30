@@ -37,9 +37,14 @@
             "description": "Battery voltage Vdc"
         },
         {
-            "endpoint": "/n/fw",
+            "endpoint": "/n/fw1",
             "type": "string",
-            "description": "Firmware version"
+            "description": "Firmware version 1"
+        },
+        {
+            "endpoint": "/n/fw2",
+            "type": "string",
+            "description": "Firmware version 2"
         },
         {
             "endpoint": "/n/cv",
