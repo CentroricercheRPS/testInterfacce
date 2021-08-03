@@ -1,0 +1,16 @@
+{
+    "interface_name": "com.rps.Alarms",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "properties",
+    "ownership": "device",
+    "description": "Allarmi attivi",
+    "mappings": [
+        {
+            "endpoint": "/a/%{alarmid}",
+            "type": "boolean",
+            "allow_unset": true,
+            "description": "List of active alarms"
+        }
+    ]
+}
