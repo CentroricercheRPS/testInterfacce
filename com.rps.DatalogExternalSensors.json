@@ -11,7 +11,7 @@
             "endpoint": "/dataloges/t1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 10000,
+            "database_retention_ttl": 157680000,
             "explicit_timestamp": true,
             "description": "Sensor 1 temperature [°C]"
         },
@@ -19,7 +19,7 @@
             "endpoint": "/dataloges/t2",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 10000,
+            "database_retention_ttl": 157680000,
             "explicit_timestamp": true,
             "description": "Sensor 2 temperature [°C]"
         },
@@ -27,7 +27,7 @@
             "endpoint": "/dataloges/t3",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 10000,
+            "database_retention_ttl": 157680000,
             "explicit_timestamp": true,
             "description": "Sensor 3 temperature [°C]"
         },
@@ -35,7 +35,7 @@
             "endpoint": "/dataloges/h1",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 10000,
+            "database_retention_ttl": 157680000,
             "explicit_timestamp": true,
             "description": "Sensor 1 humidity [%RH]"
         },
@@ -43,7 +43,7 @@
             "endpoint": "/dataloges/h2",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 10000,
+            "database_retention_ttl": 157680000,
             "explicit_timestamp": true,
             "description": "Sensor 2 humidity [%RH]"
         },
@@ -51,7 +51,7 @@
             "endpoint": "/dataloges/h3",
             "type": "integer",
             "database_retention_policy": "use_ttl",
-            "database_retention_ttl": 10000,
+            "database_retention_ttl": 157680000,
             "explicit_timestamp": true,
             "description": "Sensor 3 humidity [%RH]"
         }
