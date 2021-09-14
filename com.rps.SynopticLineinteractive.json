@@ -112,7 +112,7 @@
             "description": "System Status Color_LI"
         },
         {
-            "endpoint": "/sol/a",
+            "endpoint": "/sli/a",
             "type": "integerarray",
             "allow_unset": true,
             "description": "List of active alarms"
