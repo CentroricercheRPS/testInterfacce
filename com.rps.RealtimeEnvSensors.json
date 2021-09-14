@@ -1,0 +1,51 @@
+{
+    "interface_name": "com.rps.RealtimeEnvSensors",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "datastream",
+    "ownership": "device",
+    "aggregation": "object",
+    "description": "Valori real time. Il pacchetto dati viene inviato dalla Netman con una frequenza fissa di 30 sec\\nI dati devono essere archiviati per 24 ore. Se non è installato nessun sensore opzionale, il pacchetto non viene inviato\n",
+    "mappings": [
+        {
+            "endpoint": "/es/s",
+            "type": "integerarray",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Sensor type"
+        },
+        {
+            "endpoint": "/es/t",
+            "type": "integerarray",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Temperature [°C]"
+        },
+        {
+            "endpoint": "/es/h",
+            "type": "integerarray",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Humidity [%RH]"
+        },
+        {
+            "endpoint": "/es/i",
+            "type": "booleanarray",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Input"
+        },
+        {
+            "endpoint": "/es/o",
+            "type": "booleanarray",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "Output"
+        }
+    ]
+}
