@@ -1,15 +1,20 @@
 {
-    "interface_name": "com.rps.Control",
+    "interface_name": "com.rps.Eventlog",
     "version_major": 0,
     "version_minor": 1,
     "type": "properties",
     "ownership": "server",
-    "description": "Proprietà di controllo della Netman",
+    "description": "Batch di eventi",
     "mappings": [
         {
-            "endpoint": "/c/en",
+            "endpoint": "/el/en",
             "type": "boolean",
             "description": "Enable communication"
+        },
+        {
+            "endpoint": "/c/st",
+            "type": "boolean",
+            "description": "Registration status"
         }
     ]
 }
