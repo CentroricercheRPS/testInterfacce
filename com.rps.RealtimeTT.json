@@ -256,6 +256,14 @@
             "description": "System temperature [°C]"
         },
         {
+            "endpoint": "/tt/tex",
+            "type": "integer",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 86400,
+            "explicit_timestamp": true,
+            "description": "External battery temp. [°C]"
+        },
+        {
             "endpoint": "/tt/sta",
             "type": "string",
             "database_retention_policy": "use_ttl",
