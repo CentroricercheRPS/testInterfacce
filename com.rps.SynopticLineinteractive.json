@@ -2,74 +2,120 @@
     "interface_name": "com.rps.SynopticLineInteractive",
     "version_major": 0,
     "version_minor": 1,
-    "type": "properties",
+    "type": "datastream",
     "ownership": "device",
+    "aggregation": "object",
     "description": "Sinottico per Line Interactive. Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tCyan\n3\tBlue\n4\tOrange\n5\tRed",
     "mappings": [
         {
             "endpoint": "/sli/aut",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Autonomy_time_icon"
         },
         {
             "endpoint": "/sli/bat",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Gauge_BAT_CHARGE"
         },
         {
             "endpoint": "/sli/fl1",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Flow1_MAINS_LI"
         },
         {
             "endpoint": "/sli/fl3",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Flow3_LOAD_LI"
         },
         {
             "endpoint": "/sli/fl4a",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Flow4a_BATTERY_LI"
         },
         {
             "endpoint": "/sli/fl4b",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Flow4b_BATTERY_LI"
         },
         {
             "endpoint": "/sli/ico1",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Icon1_MAINS_LI"
         },
         {
             "endpoint": "/sli/ico2a",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Icon2a_SYSTEM_LI"
         },
         {
             "endpoint": "/sli/ico2b",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Icon2b_SYSTEM_LI"
         },
         {
             "endpoint": "/sli/ico3",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Icon3_LOAD_LI"
         },
         {
             "endpoint": "/sli/ico4",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Icon4_BATTERY_LI"
         },
         {
             "endpoint": "/sli/ld1",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "Gauge_LOAD_LI"
         },
         {
             "endpoint": "/sli/stc",
             "type": "string",
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 60,
+            "explicit_timestamp": true,
             "description": "System Status Color_LI"
+        },
+        {
+            "endpoint": "/sol/a",
+            "type": "integerarray",
+            "allow_unset": true,
+            "description": "List of active alarms"
         }
     ]
 }
