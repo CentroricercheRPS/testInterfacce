@@ -1,10 +1,10 @@
 {
-    "interface_name": "com.rps.Eventlog",
+    "interface_name": "com.rps.Control",
     "version_major": 0,
     "version_minor": 1,
     "type": "properties",
     "ownership": "server",
-    "description": "Batch di eventi",
+    "description": "Flag di controllo",
     "mappings": [
         {
             "endpoint": "/el/en",
