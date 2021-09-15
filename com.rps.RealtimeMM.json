@@ -144,7 +144,7 @@
             "description": "System temperature [°C]"
         },
         {
-            "endpoint": "/tt/tex",
+            "endpoint": "/mm/tex",
             "type": "integer",
             "database_retention_policy": "use_ttl",
             "database_retention_ttl": 86400,
