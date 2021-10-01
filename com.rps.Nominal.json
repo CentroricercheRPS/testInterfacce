@@ -7,16 +7,6 @@
     "description": "Dati nominali del dispositivo",
     "mappings": [
         {
-            "endpoint": "/n/pn",
-            "type": "string",
-            "description": "Part number"
-        },
-        {
-            "endpoint": "/n/sn",
-            "type": "string",
-            "description": "Serial number"
-        },
-        {
             "endpoint": "/n/va",
             "type": "integer",
             "description": "Power VA"
