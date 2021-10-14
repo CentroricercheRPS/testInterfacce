@@ -7,7 +7,7 @@
     "description": "Flag di controllo",
     "mappings": [
         {
-            "endpoint": "/el/en",
+            "endpoint": "/c/en",
             "type": "boolean",
             "description": "Enable communication"
         },
