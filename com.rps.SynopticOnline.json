@@ -5,7 +5,7 @@
     "type": "datastream",
     "ownership": "device",
     "aggregation": "object",
-    "description": "Sinottico per Online. Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tCyan\n3\tBlue\n4\tOrange\n5\tRed",
+    "description": "Sinottico per Online. Colori ammessi: 0\tNOT PRESENT\n1\tGrey\n2\tRed\n3\tOrange\n4\tBlue\n5\tLight blue",
     "mappings": [
         {
             "endpoint": "/sol/aut",
